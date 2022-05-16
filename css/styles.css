@@ -38,10 +38,18 @@ p {
 }
 
 .fondo {
+    padding: 3px 53px 0px 26px;
     margin: 100px 20px 30px 20px;
     background-color: rgba(128, 107, 88, 255);
     border-radius: 40px;
-    display: flex;
+    display: inline-flex;
+}
+
+@media (max-width: 644px) {
+    .container {
+        background-color: rgba(128, 107, 88, 255);
+        border-radius: 40px;
+    }
 }
 
 .centrado2 {
@@ -49,24 +57,8 @@ p {
     margin: 0 30px 30px 30px;
 }
 
-.columna1 {
-    width: 30%;
-    height: 250px;
-    margin: 1%;
-    float: left;
-    background-color: brown;
-    border-radius: 30px;
-}
-
-.columna2 {
-    width: 30%;
-    height: 250px;
-    margin: 1%;
-    float: left;
-    background-color: brown;
-    border-radius: 30px;
-}
-
+.columna1,
+.columna2,
 .columna3 {
     width: 30%;
     height: 250px;
@@ -74,6 +66,28 @@ p {
     float: left;
     background-color: brown;
     border-radius: 30px;
+    cursor: default;
+    transition: width 2s, height 0.5s;
+}
+
+.texto {
+    color: #2c2b2b;
+    text-align: center;
+}
+
+.oculta {
+    display: none;
+}
+
+.texto:hover+.oculta {
+    display: block;
+    transition: 0.5s;
+}
+
+.columna1:hover,
+.columna2:hover,
+.columna3:hover {
+    height: 300px;
 }
 
 .container {
@@ -84,8 +98,29 @@ p {
     text-align: center;
 }
 
-img {
+.img {
     max-width: 77px;
     border-radius: 150px;
     margin: 24px 28px 20px 41px;
+}
+
+.facebook,
+.instagram,
+.twitter {
+    max-width: 20px;
+    margin: 8px 4px 1px 0px;
+    text-align: right;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.facebook:hover,
+.instagram:hover,
+.twitter:hover {
+    -webkit-filter: invert(25%) sepia() saturate(100000%) hue-rotate(174deg);
+    filter: invert() sepia() saturate() hue-rotate();
+}
+
+.iconos {
+    display: table-caption;
 }
