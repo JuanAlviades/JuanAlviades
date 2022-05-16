@@ -1,13 +1,68 @@
+body {
+    background-image: url(https://i.pinimg.com/originals/46/d1/3b/46d13bde78b56eb46d346ffb60b5563a.jpg);
+    background-repeat: repeat;
+    background-image: transparent;
+    width: 1000px;
+    margin: 0px auto;
+}
+
 h1 {
     text-decoration: overline;
     color: rgb(223, 223, 160);
-    padding-top: 10px;
+    padding: 25px 28px 0 21px;
     font-family: 'Oleo Script Swash Caps', cursive;
     font-weight: lighter;
 }
 
+h2 {
+    padding: 5px;
+    border-radius: 40px;
+    color: white;
+    background-color: black;
+    font-family: 'Signika Negative', sans-serif;
+    text-align: center;
+}
+
+p {
+    font-weight: 80px;
+}
+
+.fondo {
+    margin: 100px 30px 30px 30px;
+    background-color: rgba(128, 107, 88, 255);
+    border-radius: 40px;
+    display: flex;
+}
+
+.centrado2 {
+    text-align: center;
+    margin: 0 30px 30px 30px;
+}
+
+.columna1 {
+    width: 30%;
+    height: 250px;
+    margin: 1%;
+    float: left;
+}
+
+.columna2 {
+    width: 30%;
+    height: 250px;
+    margin: 1%;
+    float: left;
+}
+
+.columna3 {
+    width: 30%;
+    height: 250px;
+    margin: 1%;
+    float: left;
+}
+
 .container {
     background-color: rgb(141, 0, 0);
+    width: 969px;
 }
 
 .centrado {
@@ -17,5 +72,5 @@ h1 {
 img {
     max-width: 10%;
     border-radius: 150px;
-    margin: 50px 0 0;
+    margin: 24px 28px 11px 23px;
 }
