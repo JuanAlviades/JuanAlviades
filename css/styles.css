@@ -1,8 +1,6 @@
 body {
     background-image: url(https://s.itl.cat/pngfile/s/230-2309584_fondo-color-vino-tinto.jpg);
     background-image: transparent;
-    width: 1000px;
-    margin: 0px auto;
 }
 
 li {
@@ -13,7 +11,6 @@ li {
 h1 {
     text-decoration: overline;
     color: rgb(223, 223, 160);
-    padding: 25px 20px 0px 20px;
     font-family: 'Oleo Script Swash Caps', cursive;
     font-weight: lighter;
     cursor: default;
@@ -34,6 +31,8 @@ h2:hover {
 }
 
 p {
+    padding: 0px 25px 0px 25px;
+    text-align: justify;
     font-weight: 80px;
 }
 
@@ -42,7 +41,7 @@ p {
     margin: 100px 20px 30px 20px;
     background-color: rgba(128, 107, 88, 255);
     border-radius: 40px;
-    display: inline-flex;
+    border: solid 5px;
 }
 
 @media (max-width: 644px) {
@@ -68,11 +67,13 @@ p {
     border-radius: 30px;
     cursor: default;
     transition: width 2s, height 0.5s;
+    border: solid 5px;
 }
 
 .texto {
-    color: #2c2b2b;
-    text-align: center;
+    padding: 0px 25px 0px 25px;
+    text-align: justify;
+    color: black#2c2b2b;
 }
 
 .oculta {
@@ -87,11 +88,17 @@ p {
 .columna1:hover,
 .columna2:hover,
 .columna3:hover {
-    height: 300px;
+    height: 270px;
 }
 
 .container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background-color: rgb(141, 0, 0);
+    width: 100%;
+    height: fit-content;
+    height: auto;
 }
 
 .centrado {
@@ -121,6 +128,27 @@ p {
     filter: invert() sepia() saturate() hue-rotate();
 }
 
-.iconos {
-    display: table-caption;
+.redes-sociales {
+    text-align: -webkit-right;
+    padding: 0px 20px 20px 20px;
+}
+
+.iconos {}
+
+
+/*///////////////////////////////////////      Primera parte finalizada      ///////////////////////////////////////////////////////////////////////*/
+
+.contenedor {
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+}
+
+.imagen {
+    background-image: url(dinosaurio.jpg);
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
 }
